@@ -27,16 +27,16 @@ public:
 
 class ElfsArmyFactory : public AbstractFactory{
 public:
-    stormtrooper* makeStormtrooper(){
+    stormtrooper* CreateStormtrooper(){
         return new stormtrooperElfs;
     }
-    doctor* makeDoctor(){
+    doctor* CreateDoctor(){
         return new doctorElfs;
     }
-    wizard* makeWizard(){
+    wizard* CreateWizard(){
         return new wizardElfs;
     }
-    cavalier* makeCavalier(){
+    cavalier* CreateCavalier(){
         return new cavalierElfs;
     }
 };
@@ -44,16 +44,16 @@ public:
 
 class HumanityArmyFactory : public AbstractFactory{
 public:
-    stormtrooper* makeStormtrooper(){
+    stormtrooper* CreateStormtrooper(){
         return new stormtrooperHumanity;
     }
-    doctor* makeDoctor(){
+    doctor* CreateDoctor(){
         return new doctorHumanity;
     }
-    wizard* makeWizard(){
+    wizard* CreateWizard(){
         return new wizardHumanity;
     }
-    cavalier* makeCavalier(){
+    cavalier* CreateCavalier(){
         return new cavalierHumanity;
     }
 };
@@ -61,16 +61,16 @@ public:
 
 class OrksArmyFactory : public AbstractFactory{
 public:
-    stormtrooper* makeStormtrooper(){
+    stormtrooper* CreateStormtrooper(){
         return new stormtrooperOrks;
     }
-    doctor* makeDoctor(){
+    doctor* CreateDoctor(){
         return new doctorOrks;
     }
-    wizard* makeWizard(){
+    wizard* CreateWizard(){
         return new wizardOrks;
     }
-    cavalier* makeCavalier(){
+    cavalier* CreateCavalier(){
         return new cavalierOrks;
     }
 };
@@ -78,16 +78,16 @@ public:
 
 class ZombieArmyFactory : public AbstractFactory{
 public:
-    stormtrooper* makeStormtrooper(){
+    stormtrooper* CreateStormtrooper(){
         return new stormtrooperZombie;
     }
-    doctor* makeDoctor(){
+    doctor* CreateDoctor(){
         return new doctorZombie;
     }
-    wizard* makeWizard(){
+    wizard* CreateWizard(){
         return new wizardZombie;
     }
-    cavalier* makeCavalier(){
+    cavalier* CreateCavalier(){
         return new cavalierZombie;
     }
 };
