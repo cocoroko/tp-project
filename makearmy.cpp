@@ -9,7 +9,6 @@
 //абстрактная фабрика
 
 #include <stdio.h>
-#include <vector>
 #include "orks.cpp"
 #include "humanity.cpp"
 #include "zombie.cpp"
