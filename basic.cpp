@@ -26,7 +26,6 @@ public:
 //штурмовик
 class stormtrooper : protected basicUnit{
 public:
-    int grenades; //у него помимо всего есть еще гранаты
     virtual void improve() = 0;
     virtual ~stormtrooper(){}
 };
@@ -34,7 +33,6 @@ public:
 //маг
 class wizard : protected basicUnit{
 public:
-    int potion; //помиио всего у него еще есть зелье
     virtual void improve() = 0;
     virtual ~wizard(){}
 };
