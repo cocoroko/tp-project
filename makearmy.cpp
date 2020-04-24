@@ -25,7 +25,7 @@ public:
 };
 
 
-class ElfsArmyFactory : AbstractFactory{
+class ElfsArmyFactory : public AbstractFactory{
 public:
     stormtrooper* makeStormtrooper(){
         return new stormtrooperElfs;
@@ -59,7 +59,7 @@ public:
 };
 
 
-class OrksArmyFactory : AbstractFactory{
+class OrksArmyFactory : public AbstractFactory{
 public:
     stormtrooper* makeStormtrooper(){
         return new stormtrooperOrks;
