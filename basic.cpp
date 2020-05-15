@@ -7,51 +7,33 @@
 //
 
 #include <iostream>
+#include "humanity/humanity.h"
+#include "elfs/elfs.h"
+#include "Information/PrintInfo.h"
+using namespace std;
 
-//Базовый класс
-class basicUnit{
-public:
-    double Health = 0;
-    double maxHealth = 0;
-    double sorcery = 0;
-    double maxSorcery = 0;
-    double damage = 0;
-    virtual void improve() = 0;
-    virtual ~basicUnit(){}
-};
+int main() {
+    PrintInfo info;
+    info.Intro();
 
+    elfs player1;
+    humanity player2;
 
-//Базовые типы
-
-//штурмовик
-class stormtrooper : protected basicUnit{
-public:
-    virtual void improve() = 0;
-    virtual ~stormtrooper(){}
-};
-
-//маг
-class wizard : protected basicUnit{
-public:
-    virtual void improve() = 0;
-    virtual ~wizard(){}
-};
+    string s1 = "cavalier";
+    string s2 = "mag";
+    string s3 = "lekar";
 
 
-//лекарь
-class doctor : protected basicUnit{
-public:
-    virtual void improve() = 0;
-    virtual ~doctor(){}
-};
-
-
-//ковалерия
-class cavalier : protected basicUnit{
-public:
-    virtual void improve() = 0;
-    virtual ~cavalier(){}
-};
-
-
+    player1.Addelfs(s1);
+    player1.Addelfs(s2);
+    player1.Addelfs(s3);
+    
+    player2.Addhumanity(s1);
+    player2.Addhumanity(s2);
+    player2.Addhumanity(s3);
+    
+    
+    player1.Info();
+    player2.Info();
+}
 
