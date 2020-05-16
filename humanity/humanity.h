@@ -12,9 +12,6 @@ public:
     virtual void Info();
     virtual int GetDamage();
 
-private:
-    std::vector <scientist*> scientist;
-    std::vector <Hlekar*> Hlekar;
-    std::vector <Hcovalier*> Hcovalier;
+    std::vector <Unit*> allUnits;
     HCreator creator;
 };
