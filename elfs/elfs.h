@@ -13,8 +13,8 @@ public:
 
 private:
     std::vector <ork*> ork;
-    std::vector <Elekar*> hlekar;
-    std::vector <Ecovalier*> hcovalier;
+    std::vector <Elekar*> elekar;
+    std::vector <Ecovalier*> ecovalier;
     ECreator creator;
 };
 
