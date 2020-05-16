@@ -1,5 +1,5 @@
 #pragma once
-#include "../Creator/Creators.h"
+#include "../сreator/сreators.h"
 #include <iostream>
 #include <vector>
 #include <string>
@@ -8,8 +8,9 @@ class elfs {
 public:
     elfs() = default;
     ~elfs() = default;
-    void Addelf(std::string type);
-    void Info();
+    virtual void Addelfs(std::string type);
+    virtual void Info();
+    virtual int GetDamage();
 
 private:
     std::vector <ork*> ork;
