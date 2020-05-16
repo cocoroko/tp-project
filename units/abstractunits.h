@@ -10,6 +10,8 @@ class Unit {
 public:
     int healthPoints;
     Weapon weapon;
+    virtual int UnitDamage() = 0;
+    virtual void Upgrade() = 0;
 };
 
 class covalier : public Unit {
