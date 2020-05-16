@@ -13,7 +13,7 @@ public:
 
 private:
     std::vector <scientist*> scientist;
-    std::vector <Hlekar*> hlekar;
-    std::vector <Hcovalier*> hcovalier;
+    std::vector <Hlekar*> Hlekar;
+    std::vector <Hcovalier*> Hcovalier;
     HCreator creator;
 };
