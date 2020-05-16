@@ -25,18 +25,17 @@ public:
 };
 
 
-class Ecavalier : public cavalier {
+class Hmag : public mag {
 public:
     Tcavalier() {
         healthPoints = 210;
         weapon.name = "raketa";
         weapon.damage = 30;
-        grenades = 5;
+        magic = 5;
     }
 };
 
-
-class Emag : public mag {
+class Hcavalier : public cavalier {
 public:
     Tmag() {
         weapon.name = "magic";
@@ -59,18 +58,17 @@ public:
 };
 
 
-class Hcavalier : public cavalier {
+class Emag : public mag  {
 public:
     Tcavalier() {
         healthPoints = 250;
         weapon.name = "raketa";
         weapon.damage = 20;
-        grenades = 3;
+        magic = 3;
     }
 };
 
-
-class Hmag : public mag {
+class Ecavalier : public cavalier {
 public:
     Tmag() {
         weapon.name = "magic";
