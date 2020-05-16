@@ -1,19 +1,22 @@
-#pragma once
-#include "../Creator/Creators.h"
-#include <iostream>
-#include <vector>
-#include <string>
+#include "Terrorists.h"
 
-class elfs {
-public:
-    elfs() = default;
-    ~elfs() = default;
-    void Addelfs(std::string type);
-    void Info();
+void elfs::Addelfs(std::string type) {
+    if( type == "ork" ) {
+        ork.push_back(creator.Createork());
+    }
+    if( type == "lekar" ) {
+        Elekar.push_back(creator.CreateElekar());
+    }
+    if( type == "covalier" ) {
+        Ecovalier.push_back(creator.CreateEcovalier());
+    }
+}
 
-private:
-    std::vector <Ecavalier*> cavalier;
-    std::vector <ESmag*> mag;
-    std::vector <Elekar*> lekar;
-    CounterCreator creator;
-};
+void elfs::Info() {
+    std::cout << std::endl;
+    std::cout << "elfs team:" << std::endl;
+    std::cout << "orks: " << ork.size() << std::endl;
+    std::cout << "covalier: " << Ecovalier.size() << std::endl;
+    std::cout << "lekars: " << Elekar.size() << std::endl;
+
+}
