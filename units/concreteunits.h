@@ -11,7 +11,14 @@ public:
         weapon.damage = 40;
         healthPoints = 60;
     }
+    
+    int UnitDamage() override  {
+        return weapon.damage;
+    }
+
+    void Upgrade() override {};
 };
+
 
 class scientist : public Unit {
 public:
@@ -21,6 +28,12 @@ public:
         weapon.damage = 40;
         healthPoints = 80;
     }
+    
+    int UnitDamage() override {
+        return weapon.damage;
+    }
+
+    void Upgrade() override {};
 };
 
 
@@ -34,6 +47,12 @@ public:
         magRiffle.name = "l";
         magRiffle.damage = 90;
     }
+    
+     int UnitDamage() override  {
+        return weapon.damage + covalierRiffle.damage;
+    }
+
+    void Upgrade() override {};
 };
 
 class Elekar : public lekar {
@@ -44,6 +63,12 @@ public:
         weapon.damage = 30;
     }
     virtual void heal() override {};
+    
+     int UnitDamage() override  {
+        return weapon.damage;
+    }
+
+    void Upgrade() override {};
 };
 
 class Ecavalier : public cavalier {
@@ -55,6 +80,12 @@ public:
         magRiffle.name = "l";
         magRiffle.damage = 90;
     }
+    
+     int UnitDamage() override  {
+        return weapon.damage + covalierRiffle.damage;
+    }
+
+    void Upgrade() override {};
 };
 
 
@@ -66,4 +97,10 @@ public:
         weapon.damage = 30;
     }
     virtual void heal() override {};
+    
+     int UnitDamage() override  {
+        return weapon.damage;
+    }
+
+    void Upgrade() override {};
 };
