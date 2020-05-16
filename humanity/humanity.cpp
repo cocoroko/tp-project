@@ -1,20 +1,21 @@
-#pragma once
-#include "../Creator/Creators.h"
-#include <iostream>
-#include <vector>
-#include <string>
+#include "humanity.h"
 
-class humanity {
-public:
-    humanity() = default;
-    ~humanity() = default;
-    void Addhumanity(std::string type);
-    void Info();
+void humanity::Addhumanity(std::string type) {
+    if( type == "scientist" ) {
+        scientist.push_back(creator.Createscientist());
+    }
+    if( type == "lekar" ) {
+        Hlekar.push_back(creator.Createlekar());
+    }
+    if( type == "covalier" ) {
+        Hcovalier.push_back(creator.Createcovalier());
+    }
+}
 
-private:
-    std::vector <*> //;
-    std::vector <*> //;
-    std::vector <*> //;
-    std::vector <*> //;
-    HCreator creator;
-};
+void CounterTerrorists::Info() {
+    std::cout << std::endl;
+    std::cout << "Humanity team:" << std::endl;
+    std::cout << "scientists: " << scientist.size() << std::endl;
+    std::cout << "lekar: " << Hlekar.size() << std::endl;
+    std::cout << "covalier: " << Hcovalier.size() << std::endl;
+}
