@@ -19,3 +19,11 @@ void elfs::Info() {
     std::cout << "covalier: " << Ecovalier.size() << std::endl;
     std::cout << "lekars: " << Elekar.size() << std::endl;
 }
+
+int elfs::GetDamage() {
+    int total = 0;
+    for( int i = 0; i < allUnits.size(); i++ ) {
+        total += allUnits[i]->UnitDamage();
+    }
+    return total;
+}
