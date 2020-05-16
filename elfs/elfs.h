@@ -12,10 +12,7 @@ public:
     virtual void Info();
     virtual int GetDamage();
 
-private:
-    std::vector <ork*> ork;
-    std::vector <Elekar*> Elekar;
-    std::vector <Ecovalier*> Ecovalier;
+    std::vector <Unit*> allUnits;
     ECreator creator;
 };
 
