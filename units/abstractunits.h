@@ -12,11 +12,6 @@ public:
     Weapon weapon;
 };
 
-class mag : public Unit {
-public:
-    int magic;
-};
-
 class covalier : public Unit {
 public:
     Weapon revolver;
