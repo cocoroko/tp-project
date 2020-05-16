@@ -4,3 +4,6 @@
 
 
 Factory Method
+Composite
+Decorator
+Proxy
