@@ -8,13 +8,13 @@ class elfs {
 public:
     elfs() = default;
     ~elfs() = default;
-    void Addelfs(std::string type);
+    void Addelf(std::string type);
     void Info();
 
 private:
     std::vector <ork*> ork;
-    std::vector <Elekar*> elekar;
-    std::vector <Ecovalier*> ecovalier;
+    std::vector <Elekar*> Elekar;
+    std::vector <Ecovalier*> Ecovalier;
     ECreator creator;
 };
 
