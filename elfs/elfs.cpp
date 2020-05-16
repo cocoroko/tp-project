@@ -1,4 +1,4 @@
-#include "Terrorists.h"
+#include "Elfs.h"
 
 void elfs::Addelfs(std::string type) {
     if( type == "ork" ) {
@@ -18,5 +18,4 @@ void elfs::Info() {
     std::cout << "orks: " << ork.size() << std::endl;
     std::cout << "covalier: " << Ecovalier.size() << std::endl;
     std::cout << "lekars: " << Elekar.size() << std::endl;
-
 }
