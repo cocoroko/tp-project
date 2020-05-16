@@ -17,9 +17,6 @@ public:
     Ecavalier* CreateEcavalier() {
         return new Ecavalier;
     }
-    Emag* CreateEmag() {
-        return new Emag;
-    }
     Elekar* CreateElekar() {
         return new Elekar;
     }
@@ -32,9 +29,6 @@ public:
     }
     Hcavalier* CreateHcavalier() {
         return new Hcavalier;
-    }
-    Hmag* CreateHmag() {
-        return new Hmag;
     }
     Hlekar* CreateHlekar() {
         return new Hlekar;
