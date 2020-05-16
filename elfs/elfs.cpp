@@ -12,8 +12,8 @@ public:
     void Info();
 
 private:
-    std::vector <cavalier*> cavalier;
-    std::vector <CTSmag*> cmag;
-    std::vector <CTlekar*> clekar;
+    std::vector <Ecavalier*> cavalier;
+    std::vector <ESmag*> mag;
+    std::vector <Elekar*> lekar;
     CounterCreator creator;
 };
