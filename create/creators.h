@@ -9,7 +9,7 @@
 #pragma once
 #include "../Units/ConcreteUnits.h"
 
-class elfsCreator {
+class elfCreator {
 public:
     ork* Createork() {
         return new ork;
