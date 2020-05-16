@@ -1,5 +1,5 @@
 #pragma once
-#include "../Creator/Creators.h"
+#include "../creator/creators.h"
 #include <iostream>
 #include <vector>
 #include <string>
@@ -8,8 +8,9 @@ class humanity {
 public:
     humanity() = default;
     ~humanity() = default;
-    void Addhumanity(std::string type);
-    void Info();
+    virtual void Addhumanity(std::string type);
+    virtual void Info();
+    virtual int GetDamage();
 
 private:
     std::vector <scientist*> scientist;
