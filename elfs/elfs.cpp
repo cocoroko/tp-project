@@ -1,4 +1,4 @@
-#include "Elfs.h"
+#include "elfs.h"
 
 void elfs::Addelfs(std::string type) {
     if( type == "ork" ) {
