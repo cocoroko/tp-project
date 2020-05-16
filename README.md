@@ -6,4 +6,4 @@
 Factory Method,
 Composite,
 Decorator,
-Proxy.
+Proxy (недоделан)
