@@ -13,7 +13,6 @@ public:
     }
 };
 
-
 class scientist : public Unit {
 public:
     virtual void possibility2() {};
@@ -25,20 +24,11 @@ public:
 };
 
 
-class Hmag : public mag {
-public:
-    Tcavalier() {
-        healthPoints = 210;
-        weapon.name = "raketa";
-        weapon.damage = 30;
-        magic = 5;
-    }
-};
 
 class Hcavalier : public cavalier {
 public:
-    Tmag() {
-        weapon.name = "magic";
+    Hcavalier() {
+        weapon.name = "revolver";
         weapon.damage = 10;
         healthPoints = 50;
         magRiffle.name = "l";
@@ -46,10 +36,9 @@ public:
     }
 };
 
-
 class Elekar : public lekar {
 public:
-    Tlekar() {
+    Elekar() {
         healthPoints = 40;
         weapon.name = "lek";
         weapon.damage = 30;
@@ -57,21 +46,10 @@ public:
     virtual void heal() override {};
 };
 
-
-class Emag : public mag  {
-public:
-    Tcavalier() {
-        healthPoints = 250;
-        weapon.name = "raketa";
-        weapon.damage = 20;
-        magic = 3;
-    }
-};
-
 class Ecavalier : public cavalier {
 public:
-    Tmag() {
-        weapon.name = "magic";
+    Ecavalier() {
+        weapon.name = "revolver";
         weapon.damage = 20;
         healthPoints = 40;
         magRiffle.name = "l";
@@ -82,7 +60,7 @@ public:
 
 class Hlekar : public lekar {
 public:
-    Tlekar() {
+    Hlekar() {
         healthPoints = 40;
         weapon.name = "lek";
         weapon.damage = 30;
