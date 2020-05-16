@@ -31,7 +31,7 @@ public:
         return new scientist;
     }
     Hcavalier* CreateHcavalier() {
-        return new Htcavalier;
+        return new Hcavalier;
     }
     Hmag* CreateHmag() {
         return new Hmag;
