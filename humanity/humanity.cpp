@@ -19,3 +19,11 @@ void CounterTerrorists::Info() {
     std::cout << "lekar: " << Hlekar.size() << std::endl;
     std::cout << "covalier: " << Hcovalier.size() << std::endl;
 }
+
+int humanity::GetDamage() {
+    int total = 0;
+    for( int i = 0; i < allUnits.size(); i++ ) {
+        total += allUnits[i]->UnitDamage();
+    }
+    return total;
+}
