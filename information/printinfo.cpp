@@ -7,9 +7,9 @@ void PrintInfo::Intro() {
     cout << "You can add 3 units to your team " << endl;
 
     cout << endl << "--------Types of elfs---------" << endl;
-    cout << " " << endl;
+    cout << "Ork, lekar, covalier" << endl;
 
     cout << endl << "--------Types of humanity--------" << endl;
-    cout << " " << endl;
+    cout << "scientist, lekar, covalier" << endl;
 
 };
